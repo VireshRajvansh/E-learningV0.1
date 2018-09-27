@@ -1,0 +1,23 @@
+
+{
+    "eLearningApp": {
+        "userSignUpByReferralCode" : {
+            "home": {
+                "title": "User Sign Up By Referral Codes",
+                "createLabel": "Buat User Sign Up By Referral Code baru",
+                "createOrEditLabel": "Buat atau edit User Sign Up By Referral Code"
+            },
+            "created": "User Sign Up By Referral Code dengan id {{ param }} telah dibuat",
+            "updated": "User Sign Up By Referral Code dengan id {{ param }} telah diperbaharui",
+            "deleted": "User Sign Up By Referral Code dengan id {{ param }} telah dihapus",
+            "delete": {
+                "question": "Apakah anda yakin ingin menghapus User Sign Up By Referral Code {{ id }}?"
+            },
+            "detail": {
+                "title": "User Sign Up By Referral Code"
+            },
+            "referralCode": "Referral Code",
+            "user": "User"
+        }
+    }
+}

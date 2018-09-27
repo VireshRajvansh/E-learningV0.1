@@ -1,0 +1,29 @@
+{
+    "name": "UserSignUpByReferralCode",
+    "fields": [
+        {
+            "fieldName": "referralCode",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "user",
+            "otherEntityName": "user",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "userSignUpByReferralCode"
+        }
+    ],
+    "changelogDate": "20180927091939",
+    "entityTableName": "user_sign_up_by_referral_code",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "angularJSSuffix": "manage"
+}
