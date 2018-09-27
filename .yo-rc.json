@@ -1,0 +1,50 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.elearning.com.apps",
+      "nativeLanguage": "en"
+    },
+    "jhipsterVersion": "5.3.4",
+    "applicationType": "monolith",
+    "baseName": "ELearning",
+    "packageName": "com.elearning.com.apps",
+    "packageFolder": "com/elearning/com/apps",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "NjRmNzFhMGEyYmJkNThiNTZlOTlhZDAzY2EyOGQ3Yjg3MWRmNWI5NTQ3NTMwZjQ1YTFkM2FhYWI0OTBkNjVlNzMxNDQzYjg0YWJhMjU1M2YzOWNjYWU4ODhiZmVjM2VmZWNmMWI3YmY1MjBjYmZhMjFlZTA2NjNkNTE0NzMwYTQ=",
+    "clientFramework": "angularX",
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "enableTranslation": true,
+    "nativeLanguage": "en",
+    "languages": [
+      "en",
+      "hy",
+      "bn",
+      "da",
+      "nl",
+      "fr",
+      "de",
+      "hi",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "ru",
+      "es"
+    ]
+  }
+}
