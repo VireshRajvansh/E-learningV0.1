@@ -1,0 +1,22 @@
+
+{
+    "eLearningApp": {
+        "services" : {
+            "home": {
+                "title": "Services",
+                "createLabel": "Buat Services baru",
+                "createOrEditLabel": "Buat atau edit Services"
+            },
+            "created": "Services dengan id {{ param }} telah dibuat",
+            "updated": "Services dengan id {{ param }} telah diperbaharui",
+            "deleted": "Services dengan id {{ param }} telah dihapus",
+            "delete": {
+                "question": "Apakah anda yakin ingin menghapus Services {{ id }}?"
+            },
+            "detail": {
+                "title": "Services"
+            },
+            "name": "Name"
+        }
+    }
+}

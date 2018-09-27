@@ -1,0 +1,22 @@
+
+{
+    "eLearningApp": {
+        "services" : {
+            "home": {
+                "title": "Services",
+                "createLabel": "Создать новый Services",
+                "createOrEditLabel": "Создать или отредактировать Services"
+            },
+            "created": "Новый Services создан с идентификатором {{ param }}",
+            "updated": "Services обновлен с идентификатором {{ param }}",
+            "deleted": "Services удален с идентификатором {{ param }}",
+            "delete": {
+                "question": "Вы уверены что хотите удалить Services {{ id }}?"
+            },
+            "detail": {
+                "title": "Services"
+            },
+            "name": "Name"
+        }
+    }
+}

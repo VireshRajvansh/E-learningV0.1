@@ -1,0 +1,22 @@
+
+{
+    "eLearningApp": {
+        "stripeTransaction" : {
+            "home": {
+                "title": "Stripe Transactions",
+                "createLabel": "Buat Stripe Transaction baru",
+                "createOrEditLabel": "Buat atau edit Stripe Transaction"
+            },
+            "created": "Stripe Transaction dengan id {{ param }} telah dibuat",
+            "updated": "Stripe Transaction dengan id {{ param }} telah diperbaharui",
+            "deleted": "Stripe Transaction dengan id {{ param }} telah dihapus",
+            "delete": {
+                "question": "Apakah anda yakin ingin menghapus Stripe Transaction {{ id }}?"
+            },
+            "detail": {
+                "title": "Stripe Transaction"
+            },
+            "stripResponse": "Strip Response"
+        }
+    }
+}

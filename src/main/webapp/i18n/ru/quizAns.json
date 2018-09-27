@@ -1,0 +1,23 @@
+
+{
+    "eLearningApp": {
+        "quizAns" : {
+            "home": {
+                "title": "Quiz Ans",
+                "createLabel": "Создать новый Quiz Ans",
+                "createOrEditLabel": "Создать или отредактировать Quiz Ans"
+            },
+            "created": "Новый Quiz Ans создан с идентификатором {{ param }}",
+            "updated": "Quiz Ans обновлен с идентификатором {{ param }}",
+            "deleted": "Quiz Ans удален с идентификатором {{ param }}",
+            "delete": {
+                "question": "Вы уверены что хотите удалить Quiz Ans {{ id }}?"
+            },
+            "detail": {
+                "title": "Quiz Ans"
+            },
+            "answers": "Answers",
+            "quiz": "Quiz"
+        }
+    }
+}

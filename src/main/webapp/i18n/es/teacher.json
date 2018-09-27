@@ -1,0 +1,44 @@
+
+{
+    "eLearningApp": {
+        "teacher" : {
+            "home": {
+                "title": "Teachers",
+                "createLabel": "Crear nuevo Teacher",
+                "createOrEditLabel": "Crear o editar Teacher"
+            },
+            "created": "Un nuevo Teacher ha sido creado con el identificador {{ param }}",
+            "updated": "Un Teacher ha sido actualizado con el identificador {{ param }}",
+            "deleted": "Un Teacher ha sido eliminado con el identificador {{ param }}",
+            "delete": {
+                "question": "¿Seguro que quiere eliminar Teacher {{ id }}?"
+            },
+            "detail": {
+                "title": "Teacher"
+            },
+            "name": "Name",
+            "about": "About",
+            "imageUrl": "Image Url",
+            "collegeYear": "College Year",
+            "dob": "Dob",
+            "mobile": "Mobile",
+            "alternativeMobile": "Alternative Mobile",
+            "premium": "Premium",
+            "active": "Active",
+            "languagesSpoken": "Languages Spoken",
+            "slug": "Slug",
+            "premiumTill": "Premium Till",
+            "referenceCode": "Reference Code",
+            "signUpByReferenceCode": "Sign Up By Reference Code",
+            "websiteURL": "Website URL",
+            "twitter": "Twitter",
+            "facebook": "Facebook",
+            "googlePlus": "Google Plus",
+            "linkedIn": "Linked In",
+            "stripeCustomer": "Stripe Customer",
+            "user": "User",
+            "address": "Address",
+            "college": "College"
+        }
+    }
+}

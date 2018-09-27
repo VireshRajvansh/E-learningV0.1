@@ -1,0 +1,28 @@
+
+{
+    "eLearningApp": {
+        "article" : {
+            "home": {
+                "title": "Articles",
+                "createLabel": "Buat Article baru",
+                "createOrEditLabel": "Buat atau edit Article"
+            },
+            "created": "Article dengan id {{ param }} telah dibuat",
+            "updated": "Article dengan id {{ param }} telah diperbaharui",
+            "deleted": "Article dengan id {{ param }} telah dihapus",
+            "delete": {
+                "question": "Apakah anda yakin ingin menghapus Article {{ id }}?"
+            },
+            "detail": {
+                "title": "Article"
+            },
+            "name": "Name",
+            "slug": "Slug",
+            "type": "Type",
+            "tagLine": "Tag Line",
+            "categories": "Categories",
+            "active": "Active",
+            "user": "User"
+        }
+    }
+}

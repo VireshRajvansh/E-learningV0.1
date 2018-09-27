@@ -1,0 +1,31 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="userSignUpByReferralCode">
+            <h2><span jhiTranslate="eLearningApp.userSignUpByReferralCode.detail.title">User Sign Up By Referral Code</span> {{userSignUpByReferralCode.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="eLearningApp.userSignUpByReferralCode.referralCode">Referral Code</span></dt>
+                <dd>
+                    <span>{{userSignUpByReferralCode.referralCode}}</span>
+                </dd>
+                <dt><span jhiTranslate="eLearningApp.userSignUpByReferralCode.user">User</span></dt>
+                <dd>
+                    {{userSignUpByReferralCode.user?.id}}
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/user-sign-up-by-referral-code-manage', userSignUpByReferralCode.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

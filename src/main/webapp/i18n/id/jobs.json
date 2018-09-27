@@ -1,0 +1,27 @@
+
+{
+    "eLearningApp": {
+        "jobs" : {
+            "home": {
+                "title": "Jobs",
+                "createLabel": "Buat Jobs baru",
+                "createOrEditLabel": "Buat atau edit Jobs"
+            },
+            "created": "Jobs dengan id {{ param }} telah dibuat",
+            "updated": "Jobs dengan id {{ param }} telah diperbaharui",
+            "deleted": "Jobs dengan id {{ param }} telah dihapus",
+            "delete": {
+                "question": "Apakah anda yakin ingin menghapus Jobs {{ id }}?"
+            },
+            "detail": {
+                "title": "Jobs"
+            },
+            "name": "Name",
+            "runOn": "Run On",
+            "type": "Type",
+            "cronExpress": "Cron Express",
+            "isComplete": "Is Complete",
+            "msg": "Msg"
+        }
+    }
+}

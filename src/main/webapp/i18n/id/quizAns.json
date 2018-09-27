@@ -1,0 +1,23 @@
+
+{
+    "eLearningApp": {
+        "quizAns" : {
+            "home": {
+                "title": "Quiz Ans",
+                "createLabel": "Buat Quiz Ans baru",
+                "createOrEditLabel": "Buat atau edit Quiz Ans"
+            },
+            "created": "Quiz Ans dengan id {{ param }} telah dibuat",
+            "updated": "Quiz Ans dengan id {{ param }} telah diperbaharui",
+            "deleted": "Quiz Ans dengan id {{ param }} telah dihapus",
+            "delete": {
+                "question": "Apakah anda yakin ingin menghapus Quiz Ans {{ id }}?"
+            },
+            "detail": {
+                "title": "Quiz Ans"
+            },
+            "answers": "Answers",
+            "quiz": "Quiz"
+        }
+    }
+}

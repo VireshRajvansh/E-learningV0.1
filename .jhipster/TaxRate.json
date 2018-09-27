@@ -1,0 +1,28 @@
+{
+    "name": "TaxRate",
+    "fields": [
+        {
+            "fieldName": "displayName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "totalTaxInPct",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "stateId",
+            "fieldType": "Integer"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20180927091934",
+    "entityTableName": "tax_rate",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "angularJSSuffix": "manage"
+}

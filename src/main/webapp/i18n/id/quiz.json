@@ -1,0 +1,32 @@
+
+{
+    "eLearningApp": {
+        "quiz" : {
+            "home": {
+                "title": "Quizzes",
+                "createLabel": "Buat Quiz baru",
+                "createOrEditLabel": "Buat atau edit Quiz"
+            },
+            "created": "Quiz dengan id {{ param }} telah dibuat",
+            "updated": "Quiz dengan id {{ param }} telah diperbaharui",
+            "deleted": "Quiz dengan id {{ param }} telah dihapus",
+            "delete": {
+                "question": "Apakah anda yakin ingin menghapus Quiz {{ id }}?"
+            },
+            "detail": {
+                "title": "Quiz"
+            },
+            "name": "Name",
+            "slug": "Slug",
+            "text": "Text",
+            "type": "Type",
+            "shortDesc": "Short Desc",
+            "isComplete": "Is Complete",
+            "tagLine": "Tag Line",
+            "active": "Active",
+            "selected": "Selected",
+            "quizAns": "Quiz Ans",
+            "user": "User"
+        }
+    }
+}

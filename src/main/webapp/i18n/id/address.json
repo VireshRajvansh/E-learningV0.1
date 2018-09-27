@@ -1,0 +1,31 @@
+
+{
+    "eLearningApp": {
+        "address" : {
+            "home": {
+                "title": "Addresses",
+                "createLabel": "Buat Address baru",
+                "createOrEditLabel": "Buat atau edit Address"
+            },
+            "created": "Address dengan id {{ param }} telah dibuat",
+            "updated": "Address dengan id {{ param }} telah diperbaharui",
+            "deleted": "Address dengan id {{ param }} telah dihapus",
+            "delete": {
+                "question": "Apakah anda yakin ingin menghapus Address {{ id }}?"
+            },
+            "detail": {
+                "title": "Address"
+            },
+            "type": "Type",
+            "addressLine1": "Address Line 1",
+            "addressLine2": "Address Line 2",
+            "zipCode": "Zip Code",
+            "city": "City",
+            "state": "State",
+            "landmark": "Landmark",
+            "country": "Country",
+            "lat": "Lat",
+            "lng": "Lng"
+        }
+    }
+}

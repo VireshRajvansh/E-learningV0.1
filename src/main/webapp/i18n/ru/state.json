@@ -1,0 +1,24 @@
+
+{
+    "eLearningApp": {
+        "state" : {
+            "home": {
+                "title": "States",
+                "createLabel": "Создать новый State",
+                "createOrEditLabel": "Создать или отредактировать State"
+            },
+            "created": "Новый State создан с идентификатором {{ param }}",
+            "updated": "State обновлен с идентификатором {{ param }}",
+            "deleted": "State удален с идентификатором {{ param }}",
+            "delete": {
+                "question": "Вы уверены что хотите удалить State {{ id }}?"
+            },
+            "detail": {
+                "title": "State"
+            },
+            "name": "Name",
+            "slug": "Slug",
+            "city": "City"
+        }
+    }
+}

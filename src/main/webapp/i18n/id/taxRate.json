@@ -1,0 +1,24 @@
+
+{
+    "eLearningApp": {
+        "taxRate" : {
+            "home": {
+                "title": "Tax Rates",
+                "createLabel": "Buat Tax Rate baru",
+                "createOrEditLabel": "Buat atau edit Tax Rate"
+            },
+            "created": "Tax Rate dengan id {{ param }} telah dibuat",
+            "updated": "Tax Rate dengan id {{ param }} telah diperbaharui",
+            "deleted": "Tax Rate dengan id {{ param }} telah dihapus",
+            "delete": {
+                "question": "Apakah anda yakin ingin menghapus Tax Rate {{ id }}?"
+            },
+            "detail": {
+                "title": "Tax Rate"
+            },
+            "displayName": "Display Name",
+            "totalTaxInPct": "Total Tax In Pct",
+            "stateId": "State Id"
+        }
+    }
+}

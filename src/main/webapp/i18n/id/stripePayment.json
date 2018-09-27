@@ -1,0 +1,48 @@
+
+{
+    "eLearningApp": {
+        "stripePayment" : {
+            "home": {
+                "title": "Stripe Payments",
+                "createLabel": "Buat Stripe Payment baru",
+                "createOrEditLabel": "Buat atau edit Stripe Payment"
+            },
+            "created": "Stripe Payment dengan id {{ param }} telah dibuat",
+            "updated": "Stripe Payment dengan id {{ param }} telah diperbaharui",
+            "deleted": "Stripe Payment dengan id {{ param }} telah dihapus",
+            "delete": {
+                "question": "Apakah anda yakin ingin menghapus Stripe Payment {{ id }}?"
+            },
+            "detail": {
+                "title": "Stripe Payment"
+            },
+            "stripeCustomerId": "Stripe Customer Id",
+            "invoiceId": "Invoice Id",
+            "planId": "Plan Id",
+            "planName": "Plan Name",
+            "charge": "Charge",
+            "created": "Created",
+            "amount": "Amount",
+            "planAmount": "Plan Amount",
+            "planCreated": "Plan Created",
+            "planCurrency": "Plan Currency",
+            "planInterval": "Plan Interval",
+            "planIntervalCount": "Plan Interval Count",
+            "liveMode": "Live Mode",
+            "paid": "Paid",
+            "periodEnd": "Period End",
+            "periodStart": "Period Start",
+            "subscriptionValue": "Subscription Value",
+            "subtotal": "Subtotal",
+            "tax": "Tax",
+            "taxPercent": "Tax Percent",
+            "taxDisplayName": "Tax Display Name",
+            "total": "Total",
+            "currency": "Currency",
+            "stripeCode": "Stripe Code",
+            "isSuccess": "Is Success",
+            "invoiceNumber": "Invoice Number",
+            "user": "User"
+        }
+    }
+}

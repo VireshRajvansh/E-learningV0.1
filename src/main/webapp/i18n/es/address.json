@@ -1,0 +1,31 @@
+
+{
+    "eLearningApp": {
+        "address" : {
+            "home": {
+                "title": "Addresses",
+                "createLabel": "Crear nuevo Address",
+                "createOrEditLabel": "Crear o editar Address"
+            },
+            "created": "Un nuevo Address ha sido creado con el identificador {{ param }}",
+            "updated": "Un Address ha sido actualizado con el identificador {{ param }}",
+            "deleted": "Un Address ha sido eliminado con el identificador {{ param }}",
+            "delete": {
+                "question": "¿Seguro que quiere eliminar Address {{ id }}?"
+            },
+            "detail": {
+                "title": "Address"
+            },
+            "type": "Type",
+            "addressLine1": "Address Line 1",
+            "addressLine2": "Address Line 2",
+            "zipCode": "Zip Code",
+            "city": "City",
+            "state": "State",
+            "landmark": "Landmark",
+            "country": "Country",
+            "lat": "Lat",
+            "lng": "Lng"
+        }
+    }
+}

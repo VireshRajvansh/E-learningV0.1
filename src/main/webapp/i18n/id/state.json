@@ -1,0 +1,24 @@
+
+{
+    "eLearningApp": {
+        "state" : {
+            "home": {
+                "title": "States",
+                "createLabel": "Buat State baru",
+                "createOrEditLabel": "Buat atau edit State"
+            },
+            "created": "State dengan id {{ param }} telah dibuat",
+            "updated": "State dengan id {{ param }} telah diperbaharui",
+            "deleted": "State dengan id {{ param }} telah dihapus",
+            "delete": {
+                "question": "Apakah anda yakin ingin menghapus State {{ id }}?"
+            },
+            "detail": {
+                "title": "State"
+            },
+            "name": "Name",
+            "slug": "Slug",
+            "city": "City"
+        }
+    }
+}

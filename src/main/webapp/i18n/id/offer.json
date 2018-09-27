@@ -1,0 +1,22 @@
+
+{
+    "eLearningApp": {
+        "offer" : {
+            "home": {
+                "title": "Offers",
+                "createLabel": "Buat Offer baru",
+                "createOrEditLabel": "Buat atau edit Offer"
+            },
+            "created": "Offer dengan id {{ param }} telah dibuat",
+            "updated": "Offer dengan id {{ param }} telah diperbaharui",
+            "deleted": "Offer dengan id {{ param }} telah dihapus",
+            "delete": {
+                "question": "Apakah anda yakin ingin menghapus Offer {{ id }}?"
+            },
+            "detail": {
+                "title": "Offer"
+            },
+            "name": "Name"
+        }
+    }
+}

@@ -1,0 +1,23 @@
+
+{
+    "eLearningApp": {
+        "gallery" : {
+            "home": {
+                "title": "Galleries",
+                "createLabel": "Создать новый Gallery",
+                "createOrEditLabel": "Создать или отредактировать Gallery"
+            },
+            "created": "Новый Gallery создан с идентификатором {{ param }}",
+            "updated": "Gallery обновлен с идентификатором {{ param }}",
+            "deleted": "Gallery удален с идентификатором {{ param }}",
+            "delete": {
+                "question": "Вы уверены что хотите удалить Gallery {{ id }}?"
+            },
+            "detail": {
+                "title": "Gallery"
+            },
+            "imageUrl": "Image Url",
+            "galleryGroup": "Gallery Group"
+        }
+    }
+}

@@ -1,0 +1,24 @@
+
+{
+    "eLearningApp": {
+        "taxRate" : {
+            "home": {
+                "title": "Tax Rates",
+                "createLabel": "Создать новый Tax Rate",
+                "createOrEditLabel": "Создать или отредактировать Tax Rate"
+            },
+            "created": "Новый Tax Rate создан с идентификатором {{ param }}",
+            "updated": "Tax Rate обновлен с идентификатором {{ param }}",
+            "deleted": "Tax Rate удален с идентификатором {{ param }}",
+            "delete": {
+                "question": "Вы уверены что хотите удалить Tax Rate {{ id }}?"
+            },
+            "detail": {
+                "title": "Tax Rate"
+            },
+            "displayName": "Display Name",
+            "totalTaxInPct": "Total Tax In Pct",
+            "stateId": "State Id"
+        }
+    }
+}

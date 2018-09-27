@@ -1,0 +1,33 @@
+
+{
+    "eLearningApp": {
+        "course" : {
+            "home": {
+                "title": "Courses",
+                "createLabel": "Создать новый Course",
+                "createOrEditLabel": "Создать или отредактировать Course"
+            },
+            "created": "Новый Course создан с идентификатором {{ param }}",
+            "updated": "Course обновлен с идентификатором {{ param }}",
+            "deleted": "Course удален с идентификатором {{ param }}",
+            "delete": {
+                "question": "Вы уверены что хотите удалить Course {{ id }}?"
+            },
+            "detail": {
+                "title": "Course"
+            },
+            "name": "Name",
+            "slug": "Slug",
+            "type": "Type",
+            "shortDesc": "Short Desc",
+            "categories": "Categories",
+            "active": "Active",
+            "premium": "Premium",
+            "courseHrs": "Course Hrs",
+            "tagLine": "Tag Line",
+            "premiumTill": "Premium Till",
+            "playlist": "Playlist",
+            "user": "User"
+        }
+    }
+}

@@ -1,0 +1,28 @@
+
+{
+    "eLearningApp": {
+        "article" : {
+            "home": {
+                "title": "Articles",
+                "createLabel": "Создать новый Article",
+                "createOrEditLabel": "Создать или отредактировать Article"
+            },
+            "created": "Новый Article создан с идентификатором {{ param }}",
+            "updated": "Article обновлен с идентификатором {{ param }}",
+            "deleted": "Article удален с идентификатором {{ param }}",
+            "delete": {
+                "question": "Вы уверены что хотите удалить Article {{ id }}?"
+            },
+            "detail": {
+                "title": "Article"
+            },
+            "name": "Name",
+            "slug": "Slug",
+            "type": "Type",
+            "tagLine": "Tag Line",
+            "categories": "Categories",
+            "active": "Active",
+            "user": "User"
+        }
+    }
+}

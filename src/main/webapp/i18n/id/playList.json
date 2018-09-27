@@ -1,0 +1,28 @@
+
+{
+    "eLearningApp": {
+        "playList" : {
+            "home": {
+                "title": "Play Lists",
+                "createLabel": "Buat Play List baru",
+                "createOrEditLabel": "Buat atau edit Play List"
+            },
+            "created": "Play List dengan id {{ param }} telah dibuat",
+            "updated": "Play List dengan id {{ param }} telah diperbaharui",
+            "deleted": "Play List dengan id {{ param }} telah dihapus",
+            "delete": {
+                "question": "Apakah anda yakin ingin menghapus Play List {{ id }}?"
+            },
+            "detail": {
+                "title": "Play List"
+            },
+            "name": "Name",
+            "slug": "Slug",
+            "type": "Type",
+            "length": "Length",
+            "duration": "Duration",
+            "tagLine": "Tag Line",
+            "active": "Active"
+        }
+    }
+}

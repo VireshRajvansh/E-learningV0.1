@@ -1,0 +1,88 @@
+<div>
+    <h2 id="page-heading">
+        <span jhiTranslate="eLearningApp.quiz.home.title">Quizzes</span>
+        <button id="jh-create-entity" class="btn btn-primary float-right jh-create-entity create-quiz-manage" [routerLink]="['/quiz-manage/new']">
+            <fa-icon [icon]="'plus'"></fa-icon>
+            <span  jhiTranslate="eLearningApp.quiz.home.createLabel">
+            Create new Quiz
+            </span>
+        </button>
+    </h2>
+    <jhi-alert></jhi-alert>
+    <br/>
+    <div class="table-responsive" *ngIf="quizzes">
+        <table class="table table-striped">
+            <thead>
+            <tr jhiSort [(predicate)]="predicate" [(ascending)]="reverse" [callback]="transition.bind(this)">
+            <th jhiSortBy="id"><span jhiTranslate="global.field.id">ID</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th jhiSortBy="name"><span jhiTranslate="eLearningApp.quiz.name">Name</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th jhiSortBy="slug"><span jhiTranslate="eLearningApp.quiz.slug">Slug</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th jhiSortBy="text"><span jhiTranslate="eLearningApp.quiz.text">Text</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th jhiSortBy="type"><span jhiTranslate="eLearningApp.quiz.type">Type</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th jhiSortBy="shortDesc"><span jhiTranslate="eLearningApp.quiz.shortDesc">Short Desc</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th jhiSortBy="isComplete"><span jhiTranslate="eLearningApp.quiz.isComplete">Is Complete</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th jhiSortBy="tagLine"><span jhiTranslate="eLearningApp.quiz.tagLine">Tag Line</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th jhiSortBy="active"><span jhiTranslate="eLearningApp.quiz.active">Active</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th jhiSortBy="selected"><span jhiTranslate="eLearningApp.quiz.selected">Selected</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th jhiSortBy="quizAns.id"><span jhiTranslate="eLearningApp.quiz.quizAns">Quiz Ans</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th jhiSortBy="user.login"><span jhiTranslate="eLearningApp.quiz.user">User</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let quiz of quizzes ;trackBy: trackId">
+                <td><a [routerLink]="['/quiz-manage', quiz.id, 'view' ]">{{quiz.id}}</a></td>
+                <td>{{quiz.name}}</td>
+                <td>{{quiz.slug}}</td>
+                <td>{{quiz.text}}</td>
+                <td>{{quiz.type}}</td>
+                <td>{{quiz.shortDesc}}</td>
+                <td>{{quiz.isComplete}}</td>
+                <td>{{quiz.tagLine}}</td>
+                <td>{{quiz.active}}</td>
+                <td>{{quiz.selected}}</td>
+                <td>
+                    <div *ngIf="quiz.quizAns">
+                        <a [routerLink]="['../quiz-ans-manage', quiz.quizAns?.id, 'view' ]" >{{quiz.quizAns?.id}}</a>
+                    </div>
+                </td>
+                <td>
+                    {{quiz.user?.login}}
+                </td>
+                <td class="text-right">
+                    <div class="btn-group flex-btn-group-container">
+                        <button type="submit"
+                                [routerLink]="['/quiz-manage', quiz.id, 'view' ]"
+                                class="btn btn-info btn-sm">
+                            <fa-icon [icon]="'eye'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/quiz-manage', quiz.id, 'edit']"
+                                class="btn btn-primary btn-sm">
+                            <fa-icon [icon]="'pencil-alt'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/', { outlets: { popup: 'quiz-manage/'+ quiz.id + '/delete'} }]"
+                                replaceUrl="true"
+                                queryParamsHandling="merge"
+                                class="btn btn-danger btn-sm">
+                            <fa-icon [icon]="'times'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div *ngIf="quizzes && quizzes.length">
+        <div class="row justify-content-center">
+            <jhi-item-count [page]="page" [total]="queryCount" [maxSize]="5" [itemsPerPage]="itemsPerPage"></jhi-item-count>
+        </div>
+        <div class="row justify-content-center">
+            <ngb-pagination [collectionSize]="totalItems" [(page)]="page" [pageSize]="itemsPerPage" [maxSize]="5" [rotate]="true" [boundaryLinks]="true" (pageChange)="loadPage(page)"></ngb-pagination>
+        </div>
+    </div>
+</div>

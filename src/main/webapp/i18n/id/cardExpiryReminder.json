@@ -1,0 +1,26 @@
+
+{
+    "eLearningApp": {
+        "cardExpiryReminder" : {
+            "home": {
+                "title": "Card Expiry Reminders",
+                "createLabel": "Buat Card Expiry Reminder baru",
+                "createOrEditLabel": "Buat atau edit Card Expiry Reminder"
+            },
+            "created": "Card Expiry Reminder dengan id {{ param }} telah dibuat",
+            "updated": "Card Expiry Reminder dengan id {{ param }} telah diperbaharui",
+            "deleted": "Card Expiry Reminder dengan id {{ param }} telah dihapus",
+            "delete": {
+                "question": "Apakah anda yakin ingin menghapus Card Expiry Reminder {{ id }}?"
+            },
+            "detail": {
+                "title": "Card Expiry Reminder"
+            },
+            "userId": "User Id",
+            "messageType": "Message Type",
+            "sendOnDate": "Send On Date",
+            "isComplete": "Is Complete",
+            "refData": "Ref Data"
+        }
+    }
+}

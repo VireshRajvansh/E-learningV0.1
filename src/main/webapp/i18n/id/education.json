@@ -1,0 +1,22 @@
+
+{
+    "eLearningApp": {
+        "education" : {
+            "home": {
+                "title": "Educations",
+                "createLabel": "Buat Education baru",
+                "createOrEditLabel": "Buat atau edit Education"
+            },
+            "created": "Education dengan id {{ param }} telah dibuat",
+            "updated": "Education dengan id {{ param }} telah diperbaharui",
+            "deleted": "Education dengan id {{ param }} telah dihapus",
+            "delete": {
+                "question": "Apakah anda yakin ingin menghapus Education {{ id }}?"
+            },
+            "detail": {
+                "title": "Education"
+            },
+            "name": "Name"
+        }
+    }
+}

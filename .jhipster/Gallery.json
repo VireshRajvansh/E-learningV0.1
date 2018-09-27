@@ -1,0 +1,27 @@
+{
+    "name": "Gallery",
+    "fields": [
+        {
+            "fieldName": "imageUrl",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "galleryGroup",
+            "otherEntityName": "galleryGroup",
+            "otherEntityField": "name"
+        }
+    ],
+    "changelogDate": "20180927091929",
+    "entityTableName": "gallery",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "angularJSSuffix": "manage"
+}

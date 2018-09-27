@@ -1,0 +1,70 @@
+<div>
+    <h2 id="page-heading">
+        <span jhiTranslate="eLearningApp.cardExpiryReminder.home.title">Card Expiry Reminders</span>
+        <button id="jh-create-entity" class="btn btn-primary float-right jh-create-entity create-card-expiry-reminder-manage" [routerLink]="['/card-expiry-reminder-manage/new']">
+            <fa-icon [icon]="'plus'"></fa-icon>
+            <span  jhiTranslate="eLearningApp.cardExpiryReminder.home.createLabel">
+            Create new Card Expiry Reminder
+            </span>
+        </button>
+    </h2>
+    <jhi-alert></jhi-alert>
+    <br/>
+    <div class="table-responsive" *ngIf="cardExpiryReminders">
+        <table class="table table-striped">
+            <thead>
+            <tr jhiSort [(predicate)]="predicate" [(ascending)]="reverse" [callback]="transition.bind(this)">
+            <th jhiSortBy="id"><span jhiTranslate="global.field.id">ID</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th jhiSortBy="userId"><span jhiTranslate="eLearningApp.cardExpiryReminder.userId">User Id</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th jhiSortBy="messageType"><span jhiTranslate="eLearningApp.cardExpiryReminder.messageType">Message Type</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th jhiSortBy="sendOnDate"><span jhiTranslate="eLearningApp.cardExpiryReminder.sendOnDate">Send On Date</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th jhiSortBy="isComplete"><span jhiTranslate="eLearningApp.cardExpiryReminder.isComplete">Is Complete</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th jhiSortBy="refData"><span jhiTranslate="eLearningApp.cardExpiryReminder.refData">Ref Data</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let cardExpiryReminder of cardExpiryReminders ;trackBy: trackId">
+                <td><a [routerLink]="['/card-expiry-reminder-manage', cardExpiryReminder.id, 'view' ]">{{cardExpiryReminder.id}}</a></td>
+                <td>{{cardExpiryReminder.userId}}</td>
+                <td>{{cardExpiryReminder.messageType}}</td>
+                <td>{{cardExpiryReminder.sendOnDate | date:'mediumDate'}}</td>
+                <td>{{cardExpiryReminder.isComplete}}</td>
+                <td>{{cardExpiryReminder.refData}}</td>
+                <td class="text-right">
+                    <div class="btn-group flex-btn-group-container">
+                        <button type="submit"
+                                [routerLink]="['/card-expiry-reminder-manage', cardExpiryReminder.id, 'view' ]"
+                                class="btn btn-info btn-sm">
+                            <fa-icon [icon]="'eye'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/card-expiry-reminder-manage', cardExpiryReminder.id, 'edit']"
+                                class="btn btn-primary btn-sm">
+                            <fa-icon [icon]="'pencil-alt'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/', { outlets: { popup: 'card-expiry-reminder-manage/'+ cardExpiryReminder.id + '/delete'} }]"
+                                replaceUrl="true"
+                                queryParamsHandling="merge"
+                                class="btn btn-danger btn-sm">
+                            <fa-icon [icon]="'times'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div *ngIf="cardExpiryReminders && cardExpiryReminders.length">
+        <div class="row justify-content-center">
+            <jhi-item-count [page]="page" [total]="queryCount" [maxSize]="5" [itemsPerPage]="itemsPerPage"></jhi-item-count>
+        </div>
+        <div class="row justify-content-center">
+            <ngb-pagination [collectionSize]="totalItems" [(page)]="page" [pageSize]="itemsPerPage" [maxSize]="5" [rotate]="true" [boundaryLinks]="true" (pageChange)="loadPage(page)"></ngb-pagination>
+        </div>
+    </div>
+</div>

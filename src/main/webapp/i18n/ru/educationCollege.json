@@ -1,0 +1,24 @@
+
+{
+    "eLearningApp": {
+        "educationCollege" : {
+            "home": {
+                "title": "Education Colleges",
+                "createLabel": "Создать новый Education College",
+                "createOrEditLabel": "Создать или отредактировать Education College"
+            },
+            "created": "Новый Education College создан с идентификатором {{ param }}",
+            "updated": "Education College обновлен с идентификатором {{ param }}",
+            "deleted": "Education College удален с идентификатором {{ param }}",
+            "delete": {
+                "question": "Вы уверены что хотите удалить Education College {{ id }}?"
+            },
+            "detail": {
+                "title": "Education College"
+            },
+            "name": "Name",
+            "student": "Student",
+            "teacher": "Teacher"
+        }
+    }
+}

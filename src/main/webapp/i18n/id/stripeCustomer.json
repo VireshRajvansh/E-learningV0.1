@@ -1,0 +1,39 @@
+
+{
+    "eLearningApp": {
+        "stripeCustomer" : {
+            "home": {
+                "title": "Stripe Customers",
+                "createLabel": "Buat Stripe Customer baru",
+                "createOrEditLabel": "Buat atau edit Stripe Customer"
+            },
+            "created": "Stripe Customer dengan id {{ param }} telah dibuat",
+            "updated": "Stripe Customer dengan id {{ param }} telah diperbaharui",
+            "deleted": "Stripe Customer dengan id {{ param }} telah dihapus",
+            "delete": {
+                "question": "Apakah anda yakin ingin menghapus Stripe Customer {{ id }}?"
+            },
+            "detail": {
+                "title": "Stripe Customer"
+            },
+            "name": "Name",
+            "created": "Created",
+            "email": "Email",
+            "currency": "Currency",
+            "stripeCustomerId": "Stripe Customer Id",
+            "stripeSubscriptionId": "Stripe Subscription Id",
+            "stripeStatus": "Stripe Status",
+            "plan": "Plan",
+            "ccBrand": "Cc Brand",
+            "ccLast4": "Cc Last 4",
+            "expMonth": "Exp Month",
+            "expYear": "Exp Year",
+            "isCancelled": "Is Cancelled",
+            "cardId": "Card Id",
+            "expectedExpiryDate": "Expected Expiry Date",
+            "user": "User",
+            "student": "Student",
+            "teacher": "Teacher"
+        }
+    }
+}

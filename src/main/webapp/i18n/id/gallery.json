@@ -1,0 +1,23 @@
+
+{
+    "eLearningApp": {
+        "gallery" : {
+            "home": {
+                "title": "Galleries",
+                "createLabel": "Buat Gallery baru",
+                "createOrEditLabel": "Buat atau edit Gallery"
+            },
+            "created": "Gallery dengan id {{ param }} telah dibuat",
+            "updated": "Gallery dengan id {{ param }} telah diperbaharui",
+            "deleted": "Gallery dengan id {{ param }} telah dihapus",
+            "delete": {
+                "question": "Apakah anda yakin ingin menghapus Gallery {{ id }}?"
+            },
+            "detail": {
+                "title": "Gallery"
+            },
+            "imageUrl": "Image Url",
+            "galleryGroup": "Gallery Group"
+        }
+    }
+}

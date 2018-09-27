@@ -43,9 +43,9 @@ spring:
         serialization.indent_output: true
     datasource:
         type: com.zaxxer.hikari.HikariDataSource
-        url: jdbc:h2:file:./target/h2db/db/elearning;DB_CLOSE_DELAY=-1
-        username: ELearning
-        password:
+        url: jdbc:mysql://localhost:3306/elearning_dev?useUnicode=true&characterEncoding=utf8&useSSL=false
+        username: root
+        password: viresh
         hikari:
             auto-commit: false
     h2:
